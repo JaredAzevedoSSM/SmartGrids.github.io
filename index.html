@@ -1,9 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Test</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jared's Smart Grid Website</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="myStyles.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="myScript.js"></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
     </head>
     <body>
-        Hello World!
+        <div id="splashCarousel" class="carousel slide splash" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#splashCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#splashCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#splashCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#splashCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#splashCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#splashCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <img src="images/wildfire.jpg" class="d-block w-100 splash" alt="Hillside with burnt trees and fire">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/flood.jpg" class="d-block w-100 splash" alt="Houses flooded under water during the day">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/industry.jpg" class="d-block w-100 splash" alt="Factory with large plooms of smoke">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/deforestation.jpg" class="d-block w-100 splash" alt="Deforested plains with few trees left">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/melting.jpg" class="d-block w-100 splash" alt="Glacier falling apart in the ocean">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/smog.jpg" class="d-block w-100 splash" alt="San Francisco during a smoggy day">
+                </div>
+            </div>
+            <div class="carousel-caption d-md-block">
+                <h1>This is what not caring about climate change looks like</h1>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#splashCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#splashCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="container-fluid px-0">
+            <div class="row align-items-center gx-0">
+                <div class="col-md-7 order-md-1">
+                    <img src="images/earth.jpg" class="d-block w-100" alt="Earth from space with satellite in view">
+                </div>
+                <div class="col-md-5 order-md-2 p-3 text-center text-md-start">
+                    <h1>Why is this an important problem?</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse accusamus iusto nisi beatae similique dolorum iure voluptates. Ipsum esse repellat cum, doloribus repudiandae laudantium eaque, quam debitis odit a unde.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid px-0">
+            <div class="row align-items-center gx-0">
+                <div class="col-md-7 order-md-2">
+                    <img src="images/skyline.jpg" class="d-block w-100" alt="New York skyline at night">
+                </div>
+                <div class="col-md-5 order-md-1 p-3 text-center text-md-end">
+                    <h1>What is at stake?</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse accusamus iusto nisi beatae similique dolorum iure voluptates. Ipsum esse repellat cum, doloribus repudiandae laudantium eaque, quam debitis odit a unde.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid px-0">
+            <div class="row align-items-center gx-0">
+                <div class="col-md-7 order-md-1">
+                    <img src="images/snowystreet.jpg" class="d-block w-100" alt="A snowy street in a small town">
+                </div>
+                <div class="col-md-5 order-md-2 p-3 text-center text-md-start">
+                    <h1>How did you realize it is an important question?</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse accusamus iusto nisi beatae similique dolorum iure voluptates. Ipsum esse repellat cum, doloribus repudiandae laudantium eaque, quam debitis odit a unde.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid px-0">
+            <div class="row align-items-center gx-0">
+                <div class="col-md-7 order-md-2">
+                    <img src="images/powerlines.jpg" class="d-block w-100" alt="Sunrise with high voltage power lines">
+                </div>
+                <div class="col-md-5 order-md-1 p-3 text-center text-md-end">
+                    <h1>How might you use data science to tackle it?</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse accusamus iusto nisi beatae similique dolorum iure voluptates. Ipsum esse repellat cum, doloribus repudiandae laudantium eaque, quam debitis odit a unde.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid px-0">
+            <div class="row align-items-center gx-0">
+                <div class="col-md-7 order-md-1">
+                    <img src="images/windmills.jpg" class="d-block w-100" alt="Hillside with several large wind turbines">
+                </div>
+                <div class="col-md-5 order-md-2 p-3 text-center text-md-start">
+                    <h1>Want to learn more about smart grids and climate change?</h1>
+                    <ul>
+                        <li><a href="#">Link #1</a></li>
+                        <li><a href="#">Link #2</a></li>
+                        <li><a href="#">Link #3</a></li>
+                        <li><a href="#">Link #4</a></li>
+                        <li><a href="#">Link #5</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p class="m-2">
+                All images courtesy of <a href="https://unsplash.com/">Unsplash.com</a> or mine unless otherwise noted. Website designed and created 
+                by Jared Azevedo. 
+            </p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
